@@ -45,6 +45,7 @@ cd autumn-cat-cursors
 ```
 
 To install system-wide (accessible to GDM login screen, Flatpaks, and Snaps):
+
 ```bash
 sudo ./install.sh --system
 ```
@@ -52,14 +53,18 @@ sudo ./install.sh --system
 ### Method 2: Manual Installation
 
 1. Copy the precompiled theme folder:
+
    ```bash
    mkdir -p ~/.local/share/icons
    cp -r dist/autumn-cat-cursors ~/.local/share/icons/
    ```
+
 2. Activate via GNOME settings:
+
    ```bash
    gsettings set org.gnome.desktop.interface cursor-theme 'autumn-cat-cursors'
    ```
+
    *(Or select **Autumn Cat Cursor** inside GNOME Tweaks).*
 
 ---
@@ -89,13 +94,17 @@ gsettings set org.gnome.desktop.interface cursor-size 24
 To customize hotspots or generate additional resolutions:
 
 1. Requirements:
+
    ```bash
    sudo apt install x11-apps python3-pil
    ```
+
 2. Run the compiler:
+
    ```bash
    python3 build.py
    ```
+
    The compiled binaries and symlinks will be written to `dist/autumn-cat-cursors/`.
 
 ---
