@@ -1,0 +1,12 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build artifacts & caches
+.build_tmp/
+__pycache__/
+*.py[cod]
+
+# Editor directories
+.vscode/
+.idea/
